@@ -1,0 +1,11 @@
+{
+  "name": "openmined-radar",
+  "version": "0.0.1",
+  "description": "Providing information about the platform status",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Andreas Offenhaeuser <http://anoff.io>",
+  "license": "Apache-2.0"
+}
