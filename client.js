@@ -1,12 +1,17 @@
 #!/usr/bin/env node
+/**
+ * Local dummy client for debug driven development
+ */
 const WebSocket = require('ws')
 
 const ws = new WebSocket('ws://localhost:8080')
 
 ws.on('open', function open () {
-  ws.send('something')
+  ws.send('hello')
 })
 
 ws.on('message', function incoming (data) {
-  console.log(data)
+  console.log('>' + data)
 })
+
+process.stdin.on('data', d => ws.send(d.toString()))
