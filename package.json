@@ -4,8 +4,13 @@
   "description": "Providing information about the platform status",
   "main": "app.js",
   "scripts": {
-    "test": "npm test"
+    "test": "standard && ava"
   },
   "author": "Andreas Offenhaeuser <http://anoff.io>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ava": "^0.22.0",
+    "standard": "^10.0.3",
+    "ws": "^3.1.0"
+  }
 }
