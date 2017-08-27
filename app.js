@@ -1,9 +1,7 @@
 const server = require('./lib/server')
-const log = require('./lib/logger').log
-global.log = log
+global.log = require('./lib/logger').log
+global.config = require('./lib/config')
 
-log.info('starting')
-log.error('starting')
-log('starting')
-
-new Date().toTimeString()
+server.start({
+  port: config.port
+})

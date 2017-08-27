@@ -12,5 +12,20 @@
     "ava": "^0.22.0",
     "standard": "^10.0.3",
     "ws": "^3.1.0"
+  },
+  "standard": {
+    "globals": [
+      "config",
+      "log"
+    ]
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "devDependencies": {
+    "nyc": "^11.1.0"
   }
 }
