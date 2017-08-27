@@ -11,6 +11,7 @@
 - [🏃‍ Usage](#‍-usage)
     - [Bootstrap environment](#bootstrap-environment)
     - [Start](#start)
+        - [Mock client](#mock-client)
     - [Tests](#tests)
 - [⚖️ License](#-license)
 
@@ -39,10 +40,19 @@ No external components are required to run `radar.js`.
 To start the statistics server run:
 
 ```sh
-npm run
+npm start
 ```
 
 or you can use `docker run openmined/radar.js` to start a prepared docker container with the latest release.
+
+
+#### Mock client
+
+To play around with the server you can run a fake client:
+
+```sh
+npm run client
+```
 
 ### Tests
 
@@ -53,7 +63,7 @@ npm test
 You can run codestyle checks with
 
 ```sh
-npm lint
+npm run lint
 ```
 
 ## ⚖️ License

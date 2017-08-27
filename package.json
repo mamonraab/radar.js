@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "standard && ava",
-    "start": "DEBUG=true nodemon app"
+    "start": "DEBUG=true nodemon app",
+    "client": "node client"
   },
   "author": "Andreas Offenhaeuser <http://anoff.io>",
   "license": "Apache-2.0",
