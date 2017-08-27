@@ -4,7 +4,8 @@
   "description": "Providing information about the platform status",
   "main": "app.js",
   "scripts": {
-    "test": "standard && ava"
+    "test": "standard && ava",
+    "start": "DEBUG=true nodemon app"
   },
   "author": "Andreas Offenhaeuser <http://anoff.io>",
   "license": "Apache-2.0",
@@ -26,6 +27,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^1.11.0",
     "nyc": "^11.1.0"
   }
 }

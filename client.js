@@ -18,12 +18,15 @@ function connect () {
     console.log('>' + data)
   })
 
+  ws.on('open', () => log.info('Connected 🎉'))
+
   ws.on('close', (code, reason) => {
     log.info(`Connection closed with code ${code}: ${reason}`)
     if (code === 1006) {
       retry()
     }
   })
+
   ws.on('error', e => log.error(e))
 }
 
