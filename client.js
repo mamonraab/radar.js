@@ -8,7 +8,7 @@ const RETRY_INTERVAL = 1 // [s]
 
 let ws
 function connect () {
-  const ws = new WebSocket('ws://localhost:8080')
+  ws = new WebSocket('ws://localhost:8080')
 
   ws.on('open', function open () {
     ws.send('hello')
@@ -32,6 +32,6 @@ function retry () {
   setTimeout(connect, RETRY_INTERVAL * 1000)
 }
 
-process.stdin.on('data', d => ws.send(d.toString()))
+process.stdin.on('data', d => ws.send(d.toString().slice(0, -1))) // remove last character (typically \n)
 
 connect()
