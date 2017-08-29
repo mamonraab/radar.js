@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "8"
+
+after_script:
+  - 'cat coverage/lcov.info | ./node_modules/.bin/codecov'
+
+notifications:
+    slack: openmined:vOUE1d9jSb6V7R1r6zrjRD4E
