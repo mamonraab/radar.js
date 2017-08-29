@@ -3,6 +3,7 @@
  * Local dummy client for debug driven development
  */
 const WebSocket = require('ws')
+global.config = require('./lib/config')
 const log = require('./lib/logger').log
 const RETRY_INTERVAL = 1 // [s]
 
