@@ -1,5 +1,7 @@
 # radar.js 📡📈
 
+[![Test Status](https://img.shields.io/travis/OpenMined/radar.js/master.svg?style=flat-square)](https://travis-ci.org/OpenMined/radar.js)
+[![Coverage](https://img.shields.io/codecov/c/github/OpenMined/radar.js/master.svg?style=flat-square)](https://codecov.io/gh/OpenMined/radar.js)
 
 > Providing information about the platform status
 

@@ -4,7 +4,7 @@
   "description": "Providing information about the platform status",
   "main": "app.js",
   "scripts": {
-    "test": "standard && ava",
+    "test": "standard && nyc ava",
     "start": "DEBUG=true nodemon app",
     "client": "node client"
   },
