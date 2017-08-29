@@ -9,7 +9,7 @@ const RETRY_INTERVAL = 1 // [s]
 
 let ws
 function connect () {
-  ws = new WebSocket('ws://localhost:8080')
+  ws = new WebSocket('ws://localhost:8080/mine')
 
   ws.on('open', function open () {
     ws.send('hello')
